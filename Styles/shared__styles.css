@@ -1,0 +1,174 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+
+
+/* GLOBALS */
+
+h1, h2, h3, h4, h5 {
+    overflow-wrap: break-word;
+    margin: 0;
+    letter-spacing: 2px;
+    color: rgb(227, 226, 226);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+}
+
+p {
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+#root, #__root {
+    isolation: isolate;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    --min-desktop-width: 50rem;
+    --max-desktop-width: 62.5rem;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: var(--max-desktop-width);
+    margin-inline: auto;
+}
+
+
+/* HEADER */
+
+.hero__header {   /* must be included in the styles for the booking CSS */
+    background: linear-gradient(to bottom, rgba(30, 29, 29, 0.5) 30%, rgba(0, 0, 0, 1)),
+    url("../Assets/Images/Dark__Dine.jpg");
+    padding-block-start: 34rem;
+    background-origin: top;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.hero__content {
+    color: rgb(171, 170, 170);
+    text-align: center;
+    padding: 1rem;
+}
+.hero__content h1 {
+    font-size: 4rem;
+    margin-block-end: 2rem;
+}
+.hero__content p {
+    margin-block-end: 2rem;
+}
+
+.description {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-block-end: 2rem;
+}
+
+
+.book__table {
+    margin-inline: auto;
+    margin-block-end: 3rem;
+    padding: .5rem 2rem;
+    width: 70%;
+    border: 1px solid rgb(199, 198, 198);
+    cursor: pointer;
+}
+
+@media (min-width: 27rem) {
+    .hero__header {
+        padding-block-start: 0;
+        padding-inline-start: 1.5rem;
+        background-position: left;
+    }
+
+    .hero__content {
+        text-align: left;
+        width: 40ch;
+    }
+    .hero__content h2 {
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 1.8rem;
+    }
+
+    .book__table {
+        margin-inline-start: 0;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .hero__header {
+        padding-block-start: 0rem;
+        padding-inline-start: 3rem;
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding-block: 4rem;
+    margin-block-start: -2rem;
+    background-color: rgba(0,0,0,1);
+    color: rgb(210, 209, 209);
+}
+
+
+.cp-text {
+    text-align: center;
+}
+
+@media (min-width: 27rem) {
+    .footer {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+
+    .cp-text {
+        position: absolute;
+        bottom: 1rem;
+    }
+}
+

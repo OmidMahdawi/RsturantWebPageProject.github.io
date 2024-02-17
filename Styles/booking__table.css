@@ -1,0 +1,113 @@
+main {
+    padding: 3rem 1rem;
+    background-color: rgb(201, 200, 200);
+}
+
+form {
+    background-color: white;
+    max-width: 28rem;
+    margin-block-start: -5rem;
+    margin-inline-start: auto;
+    padding: 3rem;
+    border-radius: 4px;
+
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media (min-width: 27rem) {
+    form {
+        margin-block-end: 3rem;
+    }
+}
+
+@media (min-width: 42.5rem) {
+    main {
+        padding-inline-end: 5rem;
+    }
+}
+
+@media (min-width: 56.25rem) {
+    form {
+        margin-block-start: -8rem;
+    }
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(40, 38, 38);
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-block-end: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(210, 209, 209);
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.time input {
+    width: 3rem;
+    text-align: center;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+.people {
+    display: flex;align-items: baseline;
+    justify-content: space-between;
+    padding-block-end: .5rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+button {
+    width: 100%;
+    margin-block-start: 2rem;
+    padding: .5rem 1rem;
+    color: rgb(219, 219, 219);
+    background-color: rgb(40, 38, 38);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+.footer {
+    margin-block-start: 0;
+}
+
+
+
+
+
+
+
+
+

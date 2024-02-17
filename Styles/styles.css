@@ -1,0 +1,236 @@
+.main__section_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 6rem;
+}
+
+.section__img  {
+    width: 350px;
+    margin-block-start: -2rem;
+    margin-block-end: 3rem;
+    margin-inline: auto;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .2);
+}
+
+.section__description {
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+.taste {
+    font-size: 2rem;
+    line-height: 1;
+    margin-block-end: 1rem;
+    color: rgb(32, 31, 31);
+}
+
+
+@media (min-width: 27rem) {
+    .main__section_wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-block-end: 6rem;
+    }
+
+    .section__img {
+        width: 350px;
+        transform: rotate(90deg);
+        margin-block-start: 1rem;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+    .section__description {
+        padding-inline-end: 1rem;
+        text-align: left;
+    }
+
+    .row__reverse {
+        flex-direction: row-reverse;
+        padding-inline-start: 3rem;
+    }
+}
+
+.highlight {
+    padding: 3rem 1rem;
+    background: rgba(0, 0, 0, 1);
+    color: rgb(195, 193, 193);
+}
+
+.highlight__content {
+    text-align: center;
+    margin-block-end: 4rem;
+
+}
+
+.highlight__content h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    color: rgb(227, 226, 226);
+    margin-block-end: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 3rem;
+}
+
+.last {
+    margin-block-end: 0;
+}
+
+.img__one {
+    background-image: url("../Assets/Images/Salad.jpg");
+}
+
+.img__two {
+    background-image: url("../Assets/Images/clean__desser__dish.jpg");
+}
+
+.img__three {
+    background-image: url("../Assets/Images/Just__Ready.jpg");
+}
+
+.menu__img {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    margin-block-end: 2rem;
+}
+
+
+.menu__info {
+    text-align: center;
+}
+
+.menu__info h3 {
+    font-size: 1.3rem;
+    color: rgb(227, 226, 226);
+    margin-block-end: 1rem;
+}
+
+
+@media (min-width: 27rem) {
+    .highlight {
+        padding: 8rem 6rem 3rem 6rem;
+    }
+    .highlight__content {
+        margin-inline: 5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 2rem;
+        align-items:center ;
+    }
+
+    .menu__img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .menu__info {
+        text-align: left;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .menu__img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .highlight {
+        padding: 6rem 6rem 1.5rem 6rem; 
+    }
+}
+
+
+.bottom {
+    margin-block-start: 6rem;
+    margin-block-end: 0;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-end: 1.5rem;
+}
+
+.bottom__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.section__description {
+    padding-inline-start: 0;
+    margin-block-end: 2rem;
+
+}
+
+.bottom .book__table {
+    background-color: rgb(40, 39, 39);
+    text-align: center;
+}
+
+@media (min-width: 27rem) {
+    .bottom .section__description {
+        flex-direction: row;
+        padding-inline-end: 3rem;
+    }
+
+    .bottom .section__img {
+        height: 200px;
+        width: 195px;
+        border-radius: 50%;
+        margin-inline: 2rem;
+    }
+}
+
+
+.footer__img{
+    background: linear-gradient(to bottom, rgba(30, 29, 29, 0.5), rgba(0, 0, 0, 1)),
+    url("../Assets/Images/Three__Spoons.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.footer__img h2 {
+    margin-block-end: 2rem;
+}
+
+.book__table__bottom {
+    padding: .5rem 1rem;
+    margin-inline: auto;
+    width: 70%;
+    border: 1px solid rgb(200, 198, 198);
+}
+
+
+@media (min-width: 27rem) {
+    .footer__img {
+        margin-block-start: 6rem;
+    }
+
+    .book__table__bottom {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .footer__img {
+        padding: 9rem 3rem;
+    }
+}
+
+
+
+
+
